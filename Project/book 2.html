@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <style>
+        body{
+            background-color: rgb(196, 195, 195);
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .book-cover{
+            text-align: center;
+            align-content: center;
+            align-items: center;
+            background-color: rgb(172, 198, 222);
+        }
+
+        .details{
+            background-color: rgb(209, 185, 156);
+            padding: 30px;
+        }
+        
+        label{
+            margin:  5px;
+            color: chocolate;
+        }
+
+        img{
+            margin: 40px;
+            max-height: 350px;
+            max-width: 350px;
+        }
+        button{
+            border-radius: 10px;
+            font-size: large;
+        }
+        button:hover{
+            opacity:0.7;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="book-cover">
+        <img src="Images/harry potter bundle.jpg" />
+        
+    </div>
+        <br>
+        <div class="details" style="text-align: center ;">
+        <h3 style="color: rgb(11, 11, 201) ;">Book Details</h3>
+        <br>
+        <label for=""><b>Author :</b></label>
+        J. K. Rowling <br>
+        <label for=""><b>Category :</b></label>
+        Fantasy-Adventure-Magic <br>
+        <label for=""><b>Price :</b></label>
+        60$ <br>
+        <label for=""><b>Language :</b></label>
+        English <br><br>
+        <button id="add" style="display:inline-block ; background-color: green; " onclick="add()">Add to cart</button>
+        <label id="text" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+        <br>
+        <button id="remove" style="display:none ; background-color: red;" onclick="remove()">Remove from cart</button>
+        </div>
+        </div>
+        <p>Back to <a href="Home Page.html"> home page</a></p>
+        
+   
+</body>
+</html>

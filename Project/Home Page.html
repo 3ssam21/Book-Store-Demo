@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+      
+    <nav>
+        <div class="navbar">
+            <a href="Home Page.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="login.html" class="right">log in</a>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <div>
+        <table style="width:100% ;" id="table1">
+            <tr>
+                <td width=30% style="text-align:right">
+                    <button class="previous-btn" id="prev-btn" style="font-size: 15px; padding: 1px 20px;"> Previous</button>
+                </td>
+    
+                <td  style="width:20% ;text-align: center; height:400px; ;">
+                    <img src="Images/1984.jpg" style="width:100%; height:100%;" id="slider" alt="Slider">
+                </td>
+    
+                <td width=30% style="text-align:left">
+                    <button class="next-btn" id="nxt-btn" style="font-size: 15px; padding: 1px 30px;"> Next</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br>
+
+    <div style="text-align: center; color: rgb(1, 10, 170);">
+        <h2>Currently Available</h2>
+    </div>
+    <br>
+    <table style="width: 100%;" id="table2">
+        <tr>
+            <td id="show">
+                <img src="Images/harry potter bundle.jpg" title="Harry Potter Bundle"><br>
+                <label for="">60$</label><br>
+                <a href="book 2.html">View Details</a>
+                <button id="add1" style="display:inline-block ; background-color: green;" onclick="add1()">Add to cart</button>
+                <label id="text1" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove1" style="display:none ; background-color: red;" onclick="remove1()">Remove from cart</button>
+            </td>
+            <td id="show">
+                <img src="Images/1984.jpg" title="1984"><br>
+                <label for="">30$</label><br>
+                <a href="book 1.html">View Details</a>
+                <button id="add2" style="display:inline-block ; background-color: green;" onclick="add2()">Add to cart</button>
+                <label id="text2" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove2" style="display:none ; background-color: red;" onclick="remove2()">Remove from cart</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td id="show">
+                <img src="Images/Hobbit.webp" title="The Hobbit"><br>
+                <label for="">20$</label><br>
+                <a href="book 3.html">View Details</a>
+                <button id="add3" style="display:inline-block ; background-color: green;" onclick="add3()">Add to cart</button>
+                <label id="text3" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove3" style="display:none ; background-color: red;" onclick="remove3()">Remove from cart</button>
+            </td>
+            <td id="show">
+                <img src="Images/Murder-on-the-Orient-Express-WebPstr.jpg" title="Murder on The Orient Express"><br>
+                <label for="">20$</label><br>
+                <a href="book 4.html">View Details</a>
+                <button id="add4" style="display:inline-block ; background-color: green;" onclick="add4()">Add to cart</button>
+                <label id="text4" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove4" style="display:none ; background-color: red;" onclick="remove4()">Remove from cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="show">
+                <img src="Images/pride_and_prejudice.png" title="Pride and Prejuudice"><br>
+                <label for="">15$</label><br>
+                <a href="book 5.html">View Details</a>
+                <button id="add5" style="display:inline-block ; background-color: green;" onclick="add5()">Add to cart</button>
+                <label id="text5" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove5" style="display:none ; background-color: red;" onclick="remove5()">Remove from cart</button>
+            </td>
+            <td id="show">
+                <img src="Images/The Great Gatspy.webp" title="The Great Gatspy"><br>
+                <label for="">20$</label><br>
+                <a href="book 6.html">View Details</a>
+                <button id="add6" style="display:inline-block ; background-color: green;" onclick="add6()">Add to cart</button>
+                <label id="text6" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove6" style="display:none ; background-color: red;" onclick="remove6()">Remove from cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="show">
+                <img src="Images/The Lord of The Rings.jpg" title="The Lord of the Rings"><br>
+                <label for="">20$</label><br>
+                <a href="book 7.html">View Details</a>
+                <button id="add7" style="display:inline-block ; background-color: green;" onclick="add7()">Add to cart</button>
+                <label id="text7" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove7" style="display:none ; background-color: red;" onclick="remove7()">Remove from cart</button>
+            </td>
+            <td id="show">
+                <img src="Images/twocities.webp" title="A tale of Two Cities" ><br>
+                <label for="">15$</label><br>
+                <a href="book 8.html">View Details</a>
+                <button id="add8" style="display:inline-block ; background-color: green;" onclick="add8()">Add to cart</button>
+                <label id="text8" for="" style="display:none; color: rgb(7, 129, 7);">Succesfully Added</label>
+                <br>
+                <button id="remove8" style="display:none ; background-color: red;" onclick="remove8()">Remove from cart</button>
+            </td>
+        </tr>
+
+    </table>
+
+
+    <div class="fotter"> <h3>Ain Shams University 2022</h3></div>
+            
+    
+
+    <script src="homepage.js"></script>
+    <script src="add-remove.js"></script>
+</body>
+</html>

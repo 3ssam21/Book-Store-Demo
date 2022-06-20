@@ -1,0 +1,3 @@
+To run the project please open the "Home Page.html" file.
+
+Then continue as you see fit.
